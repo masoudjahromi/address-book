@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Contact{% endblock %}
+
+{% block body %}
+    <h1>
+        <i class="material-icons">edit</i>
+        Edit Contact
+    </h1>
+    <div class="border-top my-3"></div>
+    {{ include('contact/_form.html.twig', {'button_label': 'Update'}) }}
+    {{ include('contact/_delete_form.html.twig') }}
+    {{ include('contact/_back_button.html.twig') }}
+{% endblock %}

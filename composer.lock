@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7bd7f08ba6a55a7b672bd83da38d62ca",
+    "content-hash": "72f9fcadd1aa56451a9081359ac18f2e",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2131,16 +2131,16 @@
         },
         {
             "name": "symfony/asset",
-            "version": "v3.4.36",
+            "version": "v3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/asset.git",
-                "reference": "6f23b2a62d425dae4f1250d2712e73bb52a907a0"
+                "reference": "677a8328aa6b0d31542ff007273b0986c1c7ccea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/asset/zipball/6f23b2a62d425dae4f1250d2712e73bb52a907a0",
-                "reference": "6f23b2a62d425dae4f1250d2712e73bb52a907a0",
+                "url": "https://api.github.com/repos/symfony/asset/zipball/677a8328aa6b0d31542ff007273b0986c1c7ccea",
+                "reference": "677a8328aa6b0d31542ff007273b0986c1c7ccea",
                 "shasum": ""
             },
             "require": {
@@ -2183,7 +2183,7 @@
             ],
             "description": "Symfony Asset Component",
             "homepage": "https://symfony.com",
-            "time": "2019-08-14T11:59:53+00:00"
+            "time": "2017-10-24T14:12:06+00:00"
         },
         {
             "name": "symfony/cache",

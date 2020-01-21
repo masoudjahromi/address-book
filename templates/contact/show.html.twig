@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+{% block body %}
+    <h1>
+        <i class="material-icons">book</i>
+        Contact
+    </h1>
+    <table class="table table-hover" style="table-layout: fixed">
+        <tbody>
+        <tr>
+            <th>ID</th>
+            <td>{{ contact.id }}</td>
+        </tr>
+        <tr>
+            <th>First Name</th>
+            <td>{{ contact.firstName }}</td>
+        </tr>
+        <tr>
+            <th>Last Name</th>
+            <td>{{ contact.lastName }}</td>
+        </tr>
+        <tr>
+            <th>Full Address</th>
+            <td>{{ contact.fullAddress }}</td>
+        </tr>
+        <tr>
+            <th>Zip Code</th>
+            <td>{{ contact.zipCode }}</td>
+        </tr>
+        <tr>
+            <th>Phone Number</th>
+            <td>{{ contact.phoneNumber }}</td>
+        </tr>
+        <tr>
+            <th>Birthday</th>
+            <td>{{ contact.birthday ? contact.birthday|date('Y-m-d') : '' }}</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>{{ contact.email }}</td>
+        </tr>
+        </tbody>
+    </table>
+    {{ include('contact/_delete_form.html.twig') }}
+    {{ include('contact/_back_button.html.twig') }}
+{% endblock %}

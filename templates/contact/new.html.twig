@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Contact{% endblock %}
+
+{% block body %}
+    <h1>
+        <i class="material-icons">add</i>
+        New Contact
+    </h1>
+    {{ include('contact/_form.html.twig') }}
+    <br>
+    <br>
+    {{ include('contact/_back_button.html.twig') }}
+
+{% endblock %}

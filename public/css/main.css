@@ -1,0 +1,21 @@
+body {
+    font-family: 'Open Sans';
+}
+
+.container {
+    padding: 50px 0;
+}
+
+.material-icons {
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+h1 .material-icons {
+    font-size: 33px;
+}
+
+td {
+    white-space: normal !important;
+    word-wrap: break-word;
+}
