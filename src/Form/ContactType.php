@@ -2,7 +2,9 @@
 
 namespace App\Form;
 
+use App\Entity\City;
 use App\Entity\Contact;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -23,6 +25,14 @@ class ContactType extends AbstractType
                     'year' => 'Year', 'month' => 'Month', 'day' => 'Day'
                 ],
                 'years' => range(1880, 2020),
+            ])->add('city', EntityType::class, [
+                'class' => City::class,
+                'choice_label' => function ($city) {
+                    /**
+                     * @var City $city
+                     */
+                    return $city->getName() . ' - ' . $city->getCountry()->getName();
+                }
             ])
             ->add('email');
     }

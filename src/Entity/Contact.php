@@ -51,6 +51,12 @@ class Contact
      */
     private $email;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\City", inversedBy="contacts")
+     * @ORM\JoinColumn(name="city_id", referencedColumnName="id")
+     */
+    private $city;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -136,6 +142,18 @@ class Contact
     public function setEmail(string $email): self
     {
         $this->email = $email;
+
+        return $this;
+    }
+
+    public function getCity(): ?City
+    {
+        return $this->city;
+    }
+
+    public function setCity(?City $city): self
+    {
+        $this->city = $city;
 
         return $this;
     }

@@ -40,6 +40,10 @@
             <th>Email</th>
             <td>{{ contact.email }}</td>
         </tr>
+        <tr>
+            <th>city</th>
+            <td>{{ contact.city.name }} ({{ contact.city.country.name }})</td>
+        </tr>
         </tbody>
     </table>
     {{ include('contact/_delete_form.html.twig') }}

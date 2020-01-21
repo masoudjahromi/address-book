@@ -19,6 +19,7 @@
                 <th>Phone Number</th>
                 <th>Birthday</th>
                 <th>Email</th>
+                <th>City</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -33,6 +34,7 @@
                 <td>{{ contact.phoneNumber }}</td>
                 <td>{{ contact.birthday ? contact.birthday|date('Y-m-d') : '' }}</td>
                 <td>{{ contact.email }}</td>
+                <td>{{ contact.city.name }} ({{ contact.city.country.name }})</td>
                 <td>
                     <a class="btn btn-info" href="{{ path('contact_show', {'id': contact.id}) }}"><i class="material-icons">info</i>show</a>
                     <a class="btn btn-warning" href="{{ path('contact_edit', {'id': contact.id}) }}"><i class="material-icons">edit</i>edit</a>

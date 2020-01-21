@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Sample of Address Book!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h4>✅ This project is a sample of Address Book based on Symfony 3.4</h4>
+    <div class="border-top my-3"></div>
+    <a class="btn btn-dark" href="{{ path('contact_index') }}">Contact List</a>
+</div>
+{% endblock %}
